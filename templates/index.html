@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ name }}'s WatchList</title>
+</head>
+<body>
+    <h2>{{ name }}'s Watchlist</h2>
+    <p>{{ movies|length}} Titles</p>
+    <ul>
+        {% for movie in movies %}
+        <li>{{ movie.title }}-{{ movie.year}}</li>
+        {% endfor %}
+    </ul>
+    <footer>
+        <samll>&copy;2019 <a href="http://helloflask.com/tutorial">HelloFlask</a></samll>
+    </footer>
+
+
+
+</body>
+</html>
