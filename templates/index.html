@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{{ name }}'s WatchList</title>
+    <title>{{ user}}'s WatchList</title>
     <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css')}}" type="text/css">
 </head>
 <body>
     <h2>
         <img alt="Avatar" class="avatar" src="{{ url_for('static',filename='images/1.jpg') }}">
 
-        {{ name }}'s Watchlist
+        {{ user}}'s Watchlist
     </h2>
     <p>{{ movies|length}} Titles</p>
     <ul>
